@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>简书首页</title>
+
+    <link href="../static/css/common/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_523036_kdkiwa4mwzziwwmi.css">
+    <link href="../static/css/index.css" rel="stylesheet">
+
+</head>
+<body class="reader-black-font">
+
+<!--导航栏-->
+<div class="top">
+    <a class="logo" href="#">
+        <img src="../static/img/简书.jpg" alt="简书logo"></a>
+
+    <div class="right">
+        <a class="write" href="#" target="_blank"><i class="iconfont icon-yumaobi"></i>
+            写文章
+        </a>
+
+        <div class="uers">
+
+            <a class="uerser" href="./index.html">
+                <img src="../static/img/uerser.jpg">
+            </a>
+
+            <ul class="homeHide">
+                <li><i class="iconfont icon-accountfilling"></i>我的主页</li>
+                <li><i class="iconfont icon-shuqian"></i>收藏的文章</li>
+                <li><i class="iconfont icon-qianbao1"></i>我的钱包</li>
+                <li><i class="iconfont icon-shezhi"></i>设置</li>
+                <li><i class="iconfont icon-fankui"></i>帮助与反馈</li>
+                <li><i class="iconfont icon-tuichu"></i>退出</li>
+            </ul>
+        </div>
+        <div class="Font">
+            <a class="fontPic">
+                <i class="iconfont icon-ziti"></i>
+            </a>
+
+            <div class="fontHide">
+                <div class="night-shift">
+                    <i class="iconfont icon-yejian"></i>
+                    <span> 夜间模式</span>
+                </div>
+                <div class="switch day-night-group">
+                    <a class="switch-btn switch-on">开</a>
+                    <a class="switch-btn switch-off active">关</a>
+                </div>
+                <hr>
+                <div class="switch font-family-group">
+                    <a class="switch-btn font-song active ">宋体</a>
+                    <a class="switch-btn font-hei">黑体</a>
+
+                </div>
+                <div class="switch">
+                    <a class="switch-btn  active">简</a>
+                    <a class="switch-btn">繁</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="middle">
+        <a class="mid find" href="#">发现</a>
+        <a class="mid attention" href="./follow.html" target="_blank">关注</a>
+        <a class="mid news" href="#">消息</a>
+
+        <span class="search">
+            <input type="text" placeholder="搜索">
+            <i class="iconfont icon-sousuo"></i>
+        </span>
+    </div>
+</div>
+
+
+<!--主体-->
+<div class="concenter">
+    <div class="main">
+        <div class="main-left">
+            <!--轮播-->
+            <div class="runoob">
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                    <!-- 指示符 -->
+                    <ul class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1" class></li>
+                        <li data-target="#myCarousel" data-slide-to="2" class></li>
+                    </ul>
+                    <!-- 轮播图片 -->
+                    <div id="banner-img-container" class="carousel-inner">
+                    </div>
+                    <!-- 左右切换按钮 -->
+                    <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+                </div>
+            </div>
+
+            <!--分类检索-->
+            <div class="category" id="category-container">
+                <a class="more-hot-collection" target="_blank" href="#">
+                    更多热门专题
+                    <i class="iconfont icon-arrow-down"></i>
+                </a>
+
+            </div>
+
+            <div class="split-line"></div>
+            <!--文章区域-->
+            <div id="list-container">
+                <ul class="note-list" id="blog-list-container" infinite-scroll-url="/">
+
+                </ul>
+            </div>
+            <a  target="_blank" class="load-more" style="display: block" id="read-more">阅读更多</a>
+        </div>
+        <!--侧边栏-->
+        <div class="main-right">
+            <div class="board">
+                <a target="_blank" href="#">
+                    <img src="../static/img/新上榜.png" alt="Banner s 1">
+                </a>
+                <a target="_blank" href="#">
+                    <img src="../static/img/7月热门.png" alt="Banner s 3">
+                </a>
+                <a target="_blank" href="#">
+                    <img src="../static/img/30日热门.png" alt="Banner s 4">
+                </a>
+                <a target="_blank" href="#">
+                    <img src="../static/img/简书出版.png" alt="Banner s 5">
+                </a>
+                <a target="_blank" href="#">
+                    <img src="../static/img/简书大学堂.png" alt="Banner s 6">
+                </a>
+
+            </div>
+            <!--右侧二维码-->
+            <a></a>
+            <!--推荐作者-->
+            <div class="recommended-authors">
+                <div class="title">
+                    <span>推荐作者</span>
+                    <a class="page-change" id="refresh-author">
+                        <i class="iconfont icon-Home-change" ></i>换一批
+                    </a>
+                </div>
+                <ul class="list" id="recommended-authors-container">
+                </ul>
+                <a href="./follow.html" target="_blank" class="find-more">
+                    查看全部
+                    <i class="iconfont  icon-arrow-down"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="../static/js/common/jquery-3.2.1.min.js"></script>
+<!-- 包括所有bootstrap的js插件或者可以根据需要使用的js插件调用　-->
+<script src="../static/js/common/bootstrap.min.js"></script>
+<script src="../static/js/common/mock.js"></script>
+
+<script src="../static/js/common/friendly-time-format.js"></script>
+<script src="../static/js/mock-data.js"></script>
+<script src="../static/js/index.js"></script>
+
+</body>
+</html>

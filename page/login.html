@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录</title>
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_523036_q0rmo9u57nvwvcxr.css">
+    <link href="../static/css/login.css" rel="stylesheet">
+
+    <script type="text/javascript">
+
+
+        window.onload = function () {
+            var loginLi = document.getElementById("login");
+            var loginDiv = document.getElementById("loginDiv");
+            var registerLi = document.getElementById("register");
+            var registerDiv = document.getElementById("registerDiv");
+
+            registerLi.onclick = function () {
+                loginDiv.className = "hide";
+                registerDiv.className = registerDiv.className.replace("hide", "");
+                registerLi.style.color="orange";
+                loginLi.style.color=""
+            }
+            loginLi.onclick = function () {
+                registerDiv.className = "hide";
+                loginDiv.className = loginDiv.className.replace("hide", "");
+                loginLi.style.color="orange";
+                registerLi.style.color=""
+            };
+        };
+
+    </script>
+
+</head>
+<body>
+<div id="main">
+
+    <ul id="mainUl">
+        <li id="login">登录</li>
+        <b>▪</b>
+        <li id="register">注册</li>
+    </ul>
+
+    <div id="loginDiv">
+
+        <div class="writein Input">
+            <input type="text" name="text" placeholder="手机号或邮箱" class="firstPut">
+            <i class="iconfont icon-account"></i><br>
+        </div>
+        <div class="writein Password">
+            <input type="password" name="text" placeholder="密码" class="pass">
+            <i class="iconfont icon-password"></i><br>
+        </div>
+        <div class="checkbox">
+            <input type="checkbox" name="check">记住我
+        </div>
+
+        <a href="#" class="question">登录遇到问题？</a><br>
+        <button type="submit" name="bton">登录</button>
+    </div>
+
+    <div id="registerDiv" class="hide">
+        <div class="writein Input">
+            <input type="text" name="text" placeholder="你的昵称" class="firstPut">
+            <i class="iconfont icon-account"></i><br>
+        </div>
+        <div class="writein Phone">
+            <input type="text" name="text" placeholder="手机号" class="firstPhone">
+            <i class="iconfont icon-mobilephone"></i><br>
+        </div>
+        <div class="writein Password">
+            <input type="password" name="text" placeholder="设置密码" class="pass">
+            <i class="iconfont icon-password"></i><br>
+        </div>
+        <button type="submit" name="bton">注册</button>
+        <br>
+        <p>点击 “注册” 即表示您同意并愿意遵守XX<br>
+            用户协议 和 隐私政策 。</p>
+    </div>
+
+    <div id="con">
+        <h6>社交账号登录</h6>
+
+        <ul id="conUl">
+            <li>
+                <a class="weibo" target="_blank" href="#">
+                    <i class="iconfont icon-weibo"></i>
+                </a></li>
+            <li>
+                <a class="qq" target="_blank" href="#">
+                    <i class="iconfont icon-qq"></i>
+                </a>
+            </li>
+            <li>
+                <a class="weixin" target="_blank" href="#">
+                    <i class="iconfont icon-wechat"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+</div>
+
+<script src="../static/js/jquery-3.2.1.min.js"></script>
+</body>
+</html>

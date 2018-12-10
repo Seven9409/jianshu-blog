@@ -1,0 +1,582 @@
+body {
+    margin: 0;
+    padding-top: 56px !important;
+    min-width: 768px;
+    font-size: 17px;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer
+}
+a:hover{text-decoration:none}
+
+
+li {
+    list-style: none;
+}
+
+/*导航栏*/
+.top {
+    margin: 0 auto;
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    border-bottom: 1px solid #f0f0f0;
+    background-color: #fff;
+    top: 0;
+    border-radius: 0;
+    min-height: 50px;
+    margin-bottom: 20px;
+
+}
+
+.logo {
+    float: left;
+    margin-right: 150px;
+    /*box-sizing: border-box;*/
+    /*height: 56px;*/
+}
+
+.right .write {
+    float: right;
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    margin: 8px 15px 0;
+    border-radius: 20px;
+    font-size: 15px;
+    color: #fff;
+    background-color: #ea6f5a;
+    text-align: center;
+}
+
+.right .write i {
+    margin-right: 3px;
+    font-size: 19px;
+    vertical-align: middle;
+}
+
+.right .uers {
+    float: right;
+}
+
+.right .uers a {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    margin: 8px 28px 8px 20px;
+    display: block;
+}
+
+.right .uers .uerser img {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+.right .uers .homeHide {
+    left: auto;
+    border-radius: 0 0 4px 4px;
+    margin-top: 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .1);
+    position: absolute;
+    top: 100%;
+    z-index: 1000;
+    min-width: 160px;
+    padding: 5px 0;
+    /*margin: 2px 0 0;*/
+    font-size: 14px;
+    text-align: left;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, .15);
+    background-clip: padding-box;
+    line-height: 50px;
+    display: none;
+}
+
+.homeHide i {
+    color: red;
+    font-size: 17px;
+    margin-right: 5px;
+    padding-left: 15px;
+}
+
+.Font .fontPic {
+    float: right;
+    line-height: 20px;
+    padding: 17px 10px 17px 15px;
+    font-size: 24px;
+    color: #969696;
+}
+
+.fontPic i {
+    font-size: 27px;
+}
+
+.fontHide {
+    position: absolute;
+    top: 100%;
+    left: 1675px;
+    z-index: 1;
+    padding: 20px 20px 20px 24px;
+    margin-left: -80px;
+    min-width: 235px;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .1);
+    display: none;
+}
+
+.fontHide .night-shift {
+    padding-left: 4px;
+    margin-right: 16px;
+    font-size: 14px;
+    color: #969696;
+    line-height: 40px;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.night-shift .icon-yejian {
+    position: relative;
+    top: 2px;
+    margin-right: 5px;
+    font-size: 17px;
+}
+
+.fontHide .switch {
+    font-size: 0;
+    letter-spacing: -4px;
+    box-sizing: border-box;
+}
+
+.fontHide .day-night-group {
+    width: auto;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.fontHide .switch-btn:first-child {
+    padding: 10px 13px 10px 17px;
+    border-radius: 20px 0 0 20px;
+    border-right: none;
+}
+
+.fontHide .switch-btn:last-child {
+    padding: 10px 17px 10px 13px;
+    border-radius: 0 20px 20px 0;
+    border-left: none;
+}
+
+.fontHide .font-family-group {
+    margin-bottom: 10px;
+}
+
+.fontHide .active {
+    color: #fff;
+    background-color: #6dacf4;
+    border-color: #6dacf4;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, .1);
+}
+
+.fontHide .switch-btn {
+    width: 49%;
+    text-align: center;
+    font-size: 14px;
+    letter-spacing: 0 !important;
+    /*color: #969696;*/
+    border: 1px solid #e5e5e5;
+    vertical-align: middle;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+.middle {
+    width: 960px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: border-box;
+
+}
+
+.middle .mid {
+    margin-right: 25px;
+    letter-spacing: 3px;
+    font-size: 18px;
+    float: left;
+    line-height: 67px;
+}
+
+.middle .search {
+    position: relative;
+    line-height: 67px;
+}
+
+.search input {
+    width: 160px;
+    height: 38px;
+    font-size: 14px;
+    border: 1px solid #eee;
+    border-radius: 40px;
+    background: #eee;
+    padding: 0 40px 0 20px;
+}
+
+.search i {
+    position: absolute;
+    left: 180px;
+    top: -18px;
+    font-size: 27px;
+}
+
+/*主体*/
+.concenter {
+    width: 960px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.main {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.main-left {
+    padding-top: 30px;
+    padding-right: 15px;
+    padding-left: 15px;
+    width: 63.66667%;
+    position: relative;
+    min-height: 1px;
+    float: left;
+}
+
+.runoob {
+    width: 100%;
+    padding-bottom: 15px;
+    margin-bottom: 10px;
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+}
+
+<!--分类检索-->
+.category {
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.category .collection {
+    display: inline-block;
+    margin: 0 18px 18px 0;
+    min-height: 32px;
+    background-color: #f7f7f7;
+    border: 1px solid #dcdcdc;
+    border-radius: 4px;
+    vertical-align: top;
+    overflow: hidden;
+}
+
+.category .collection img {
+    width: 32px;
+    height: 32px;
+    vertical-align: middle;
+    border: 0;
+}
+
+.category .collection .name {
+    display: inline-block;
+    padding: 0 11px 0 6px;
+    font-size: 14px;
+}
+
+.category .more-hot-collection {
+    display: inline-block;
+    margin-top: 7px;
+    font-size: 14px;
+    color: #787878;
+}
+
+/*文章区域*/
+.main .main-left .split-line {
+    margin: -5px 0 15px;
+    border-top: 1px solid #f0f0f0;
+}
+
+.main-left .note-list {
+    margin: 0;
+    padding: 0;
+}
+
+.note-list li {
+    position: relative;
+    width: 100%;
+    margin: 0 0 17px;
+    padding: 0 2px 17px 0;
+    border-bottom: 1px solid #f0f0f0;
+    word-wrap: break-word;
+    line-height: 20px;
+    display: list-item;
+}
+
+.note-list li.have-img {
+    min-height: 140px;
+}
+
+.note-list .have-img .warp-img {
+    position: absolute;
+    top: 50%;
+    margin-top: -68px;
+    right: 0;
+    width: 150px;
+    height: 120px;
+}
+
+.note-list .have-img .warp-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    border: 1px solid #f0f0f0;
+    vertical-align: middle;
+}
+
+.note-list .have-img .content {
+    padding-right: 160px;
+}
+
+.note-list .author {
+    margin-bottom: 14px;
+    font-size: 13px;
+}
+
+.note-list .author .avatar {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 5px 0 0;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+}
+
+.avatar img {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+.note-list .author .info {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.note-list .author .info .nickname {
+    vertical-align: middle;
+}
+
+.note-list .author .info span {
+    display: inline-block;
+    padding-left: 3px;
+    color: #969696;
+    vertical-align: middle;
+}
+
+.note-list .title {
+    margin: -7px 0 4px;
+    display: inherit;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+.note-list .abstract {
+    margin: 0 0 8px;
+    font-size: 13px;
+    line-height: 24px;
+}
+
+.note-list .meta {
+    padding-right: 0 !important;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.note-list .meta a {
+    margin-right: 10px;
+    color: #b4b4b4;
+}
+
+.note-list .collection-tag {
+    display: inline-block;
+    padding: 3px 6px;
+    margin-top: -1px;
+    max-width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    line-height: 1;
+    vertical-align: middle;
+    color: #ea6f5a !important;
+    border: 1px solid rgba(236, 97, 73, .7);
+    border-radius: 3px;
+}
+
+.note-list .meta span {
+    margin-right: 10px;
+    color: #b4b4b4;
+}
+
+.main-left .load-more {
+    width: 100%;
+    border-radius: 20px;
+    background-color: #a5a5a5;
+    /*height: 40px;*/
+    margin: 30px auto 60px;
+    padding: 10px 15px;
+    text-align: center;
+    font-size: 15px;
+    color: #fff;
+    display: block;
+}
+
+/*侧边栏*/
+.main .main-right {
+    padding: 30px 0 0;
+    margin-left: 4.16667%;
+    width: 29.16667%;
+    float: left;
+    position: relative;
+    min-height: 1px;
+}
+
+.main-right .board {
+    margin-top: -4px;
+    padding-bottom: 4px;
+    min-height: 228px;
+}
+
+.main-right .board img {
+    width: 100%;
+    min-height: 50px;
+    margin-bottom: 6px;
+    border-radius: 4px;
+    vertical-align: middle;
+}
+/*推荐作者*/
+.main-right .recommended-authors {
+    margin-bottom: 10px;
+    padding-top: 0;
+    font-size: 13px;
+    text-align: center;
+}
+
+.main-right .recommended-authors .title {
+    text-align: left;
+}
+
+.main-right .recommended-authors .title span {
+    font-size: 14px;
+    color: #969696;
+}
+
+.main-right .recommended-authors .title .page-change {
+    float: right;
+    display: inline-block;
+    font-size: 14px;
+    color: #969696;
+}
+
+.main-right .recommended-authors .title .page-change i {
+    display: inline-block;
+    line-height: 1;
+    transition: .5s ease;
+}
+
+.recommended-authors .list {
+    margin: 0 0 10px;
+    text-align: left;
+    /*padding-left: 0;*/
+    /*border:1px solid black;*/
+    width: 290px;
+    height: 320px;
+    padding: 0 5px;
+}
+
+.recommended-authors .list li {
+    margin-top: 15px;
+    line-height: 20px;
+}
+
+.recommended-authors .list .avatar {
+    float: left;
+    width: 48px;
+    height: 48px;
+    margin-right: 10px;
+    display: block;
+    cursor: pointer;
+}
+
+.recommended-authors .list .avatar img {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+.recommended-authors .list .follow {
+    float: right;
+    margin-top: 5px;
+    padding: 0;
+    font-size: 13px;
+    color: #42c02e;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.recommended-authors .list .follow i {
+    position: inherit;
+    width: inherit;
+    height: inherit;
+    font-size: 13px;
+}
+
+.recommended-authors .list .name {
+    padding-top: 5px;
+    margin-right: 60px;
+    font-size: 14px;
+    display: block;
+}
+
+.recommended-authors .list p {
+    margin-top: 2px;
+    font-size: 12px;
+    color: #969696;
+}
+
+.recommended-authors .find-more {
+    position: absolute;
+    padding: 7px 7px 7px 12px;
+    left: 0;
+    width: 100%;
+    font-size: 13px;
+    color: #787878;
+    background-color: #f7f7f7;
+    border: 1px solid #dcdcdc;
+    border-radius: 4px;
+}

@@ -1,0 +1,157 @@
+body {
+    background-color: rgb(241, 241, 241);
+    text-align: center;
+}
+
+#main {
+    width: 400px;
+    /*height: 600px;*/
+    border-radius: 4px;
+    margin: 60px auto 0;
+    padding: 50px 30px 90px;
+    background-color: white;
+    border: 1px outset #ffffff;
+    box-sizing: border-box;
+}
+
+#main #mainUl {
+    list-style: none;
+    font-size: 25px;
+    padding: 0;
+    margin-top: 20px;
+    margin-bottom: 30px;
+
+}
+
+#main #mainUl li {
+    display: inline;
+    margin: 15px;
+
+}
+
+.writein {
+    position: relative;
+
+}
+
+.writein input {
+    width: 300px;
+    height: 50px;
+    background-color: rgb(248, 248, 248);
+    /*border: 1px solid rgb(200, 200, 200);*/
+    /*border-radius: 4px;*/
+    padding: 4px 12px 4px 35px;
+    font-size: 15px;
+    box-sizing: border-box;
+
+}
+.writein i {
+    position: absolute;
+    left: 30px;
+    top: 17px;
+}
+/*.Input{*/
+/*margin-bottom: 0;*/
+/*}*/
+.firstPut{
+    border-radius: 4px 4px 0 0;
+    border-bottom: none;
+    border-top:1px solid rgb(200, 200, 200);
+    border-left: 1px solid rgb(200, 200, 200);
+    border-right: 1px solid rgb(200, 200, 200);
+
+}
+.Password {
+    margin-bottom: 30px;
+
+}
+.firstPhone{
+    border-bottom: none;
+    border-top:1px solid rgb(200, 200, 200);
+    border-left: 1px solid rgb(200, 200, 200);
+    border-right: 1px solid rgb(200, 200, 200);
+}
+.pass{
+    border-radius: 0 0 4px 4px ;
+    border: 1px solid rgb(200, 200, 200);
+}
+.checkbox {
+    float: left;
+    margin-left: 20px;
+}
+
+.question {
+    float: right;
+    margin-right: 20px;
+    text-decoration: none;
+}
+
+button {
+    width: 300px;
+    height: 45px;
+    border: 1px solid #1E90FF;
+    border-radius: 20px;
+    background-color: #1E90FF;
+    margin: 25px;
+    color: white;
+    font-size: 20px;
+}
+
+p {
+    font-size: 12px;
+}
+
+.hide {
+    display: none;
+}
+
+#con h6 {
+
+    margin: 0 0 20px;
+    font-size: 12px;
+    color: #b5b5b5;
+    font-weight: 500;
+    line-height: 1.1;
+}
+
+#con #conUl {
+    list-style: none;
+    margin-bottom: 30px;
+    margin-top: 0;
+    padding-left: 80px;
+    position: relative;
+}
+
+#con #conUl li {
+    margin: 0 5px;
+    float: left;
+}
+
+#con #conUl li a {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    line-height: 50px;
+    display: block;
+    text-decoration: none;
+}
+
+#con #conUl li a i {
+    font-size: 24px;
+    color: white;
+}
+
+#con #conUl .weibo {
+    background-color: red;
+
+}
+
+#con #conUl .qq {
+    background-color: #1E90FF;
+
+}
+
+#con #conUl .weixin {
+    background-color: green;
+
+}

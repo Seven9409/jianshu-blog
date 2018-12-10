@@ -1,0 +1,470 @@
+body {
+    margin: 0;
+    padding-top: 56px !important;
+    min-width: 768px;
+    font-size: 17px;
+    height: 100%;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer
+}
+a:hover{text-decoration:none}
+
+li {
+    list-style: none;
+}
+
+/*导航栏*/
+.top {
+    margin: 0 auto;
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    border-bottom: 1px solid #f0f0f0;
+    background-color: #fff;
+    top: 0;
+    border-radius: 0;
+    min-height: 50px;
+    margin-bottom: 20px;
+
+}
+
+.logo {
+    float: left;
+    margin-right: 150px;
+    /*box-sizing: border-box;*/
+    /*height: 56px;*/
+}
+
+.right .write {
+    float: right;
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    margin: 8px 15px 0;
+    border-radius: 20px;
+    font-size: 15px;
+    color: #fff;
+    background-color: #ea6f5a;
+    text-align: center;
+}
+
+.right .write i {
+    margin-right: 3px;
+    font-size: 19px;
+    vertical-align: middle;
+}
+
+.right .uers {
+    float: right;
+}
+
+.right .uers a {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    margin: 8px 28px 8px 20px;
+    display: block;
+}
+
+.right .uers .uerser img {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+.right .uers .homeHide {
+    left: auto;
+    border-radius: 0 0 4px 4px;
+    margin-top: 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .1);
+    position: absolute;
+    top: 100%;
+    z-index: 1000;
+    min-width: 160px;
+    padding: 5px 0;
+    font-size: 14px;
+    text-align: left;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, .15);
+    background-clip: padding-box;
+    line-height: 50px;
+    display: none;
+}
+
+.homeHide i {
+    color: red;
+    font-size: 17px;
+    margin-right: 5px;
+    padding-left: 15px;
+}
+
+.Font .fontPic {
+    float: right;
+    line-height: 20px;
+    padding: 17px 10px 17px 15px;
+    font-size: 24px;
+    color: #969696;
+}
+
+.fontPic i {
+    font-size: 27px;
+}
+
+.fontHide {
+    position: absolute;
+    top: 100%;
+    left: 1675px;
+    z-index: 1;
+    padding: 20px 20px 20px 24px;
+    margin-left: -80px;
+    min-width: 235px;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .1);
+    display: none;
+}
+
+.fontHide .night-shift {
+    padding-left: 4px;
+    margin-right: 16px;
+    font-size: 14px;
+    color: #969696;
+    line-height: 40px;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.night-shift .icon-yejian {
+    position: relative;
+    top: 2px;
+    margin-right: 5px;
+    font-size: 17px;
+}
+
+.fontHide .switch {
+    font-size: 0;
+    letter-spacing: -4px;
+    box-sizing: border-box;
+}
+
+.fontHide .day-night-group {
+    width: auto;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.fontHide .switch-btn:first-child {
+    padding: 10px 13px 10px 17px;
+    border-radius: 20px 0 0 20px;
+    border-right: none;
+}
+
+.fontHide .switch-btn:last-child {
+    padding: 10px 17px 10px 13px;
+    border-radius: 0 20px 20px 0;
+    border-left: none;
+}
+
+.fontHide .font-family-group {
+    margin-bottom: 10px;
+}
+
+
+.fontHide .active {
+    color: #fff;
+    background-color: #6dacf4;
+    border-color: #6dacf4;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, .1);
+}
+
+.fontHide .switch-btn {
+    width: 49%;
+    text-align: center;
+    font-size: 14px;
+    letter-spacing: 0 !important;
+    /*color: #969696;*/
+    border: 1px solid #e5e5e5;
+    vertical-align: middle;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+.middle {
+    width: 960px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: border-box;
+
+}
+
+.middle .mid {
+    margin-right: 25px;
+    letter-spacing: 3px;
+    font-size: 18px;
+    float: left;
+    line-height: 67px;
+}
+
+.middle .search {
+    position: relative;
+    line-height: 67px;
+}
+
+.search input {
+    width: 160px;
+    height: 38px;
+    font-size: 14px;
+    border: 1px solid #eee;
+    border-radius: 40px;
+    background: #eee;
+    padding: 0 40px 0 20px;
+}
+
+.search i {
+    position: absolute;
+    left: 180px;
+    top: -18px;
+    font-size: 27px;
+}
+
+/*主体*/
+.container {
+    width: 960px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px
+}
+
+.row {
+    padding-top: 30px;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.aside {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    margin: 86px 0 0;
+    padding: 0 0 30px;
+    width: 280px;
+    overflow: auto;
+    border-right: 1px solid #f0f0f0;
+}
+
+.subscription .aside .change-type {
+    margin-left: 15px;
+    font-size: 15px;
+}
+
+.subscription .aside ul {
+    margin-top: 7px;
+    list-style: none;
+    border-top: 1px solid #f0f0f0;
+    padding-left: 0;
+}
+
+
+.subscription .aside ul>li {
+    line-height: 20px;
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+.subscription .aside li.active .wrap {
+    background-color: #f0f0f0;
+}
+
+.subscription .aside li:first-child .wrap {
+    border-radius: 0 0 0 4px !important;
+}
+
+.subscription .aside .wrap {
+    padding: 10px 13px;
+    display: block;
+}
+
+.subscription .aside .avatar, .subscription .aside .avatar-collection {
+    width: 40px;
+    height: 40px;
+    margin-right: 4px;
+    display: inline-block;
+}
+
+.avatar img {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+.subscription .aside .name {
+    font-size: 14px;
+    vertical-align: middle;
+    display: inline-block;
+    max-width: 160px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.subscription .main {
+    padding-left: 0;
+}
+
+.col-xs-offset-8 {
+    margin-left: 33.33333%;
+}
+
+.col-xs-16 {
+    width: 66.66667%;
+}
+
+.trigger-menu {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #f0f0f0;
+    font-size: 0;
+    list-style: none;
+}
+
+.trigger-menu li.active {
+    border-bottom: 2px solid #646464;
+}
+
+.trigger-menu li {
+    position: relative;
+    display: inline-block;
+    padding: 8px 0;
+    margin-bottom: -1px;
+}
+
+.trigger-menu .active a, .trigger-menu a:hover {
+    color: #646464;
+}
+
+.trigger-menu a {
+    padding: 13px 20px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #969696;
+    line-height: 25px;
+}
+
+.trigger-menu i {
+    margin-right: 5px;
+    font-size: 17px;
+}
+
+.subscription .main .add-follow-list li {
+    margin: 0 0 20px;
+    padding: 0 0 20px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.subscription .main .add-follow-list .btn {
+    float: right;
+    padding: 8px 0;
+    margin-top: 5px;
+    width: 100px;
+    border-radius: 40px;
+}
+
+.follow {
+    border-color: #42c02e;
+}
+
+.follow span {
+    margin-left: 2px;
+    display: inline;
+}
+
+.subscription .main .add-follow-list .tag {
+    margin-bottom: 13px;
+    font-size: 12px;
+    color: #ec6e56;
+}
+
+.subscription .main .add-follow-list .tag i {
+    margin-right: 5px;
+    font-size: 16px;
+}
+
+.subscription .main .add-follow-list .avatar-collection {
+    float: left;
+    width: 52px;
+    height: 52px;
+    display: block;
+    cursor: pointer;
+}
+
+.avatar-collection img {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #ddd;
+    border-radius: 10%;
+}
+
+.subscription .main .add-follow-list .info {
+    padding-left: 64px;
+    padding-right: 120px;
+    line-height: normal;
+    min-height: 50px;
+}
+
+.subscription .main .add-follow-list .info .name {
+    margin: 0 0 5px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #333;
+    display: block;
+}
+
+.subscription .main .add-follow-list .info p {
+    margin: 0 0 5px;
+    font-size: 12px;
+    color: #969696;
+}
+
+.subscription .main .add-follow-list .info a {
+    margin-right: 10px;
+}
+
+.subscription .main .add-follow-list .info a, .subscription .main .add-follow-list .info span {
+    margin: 0 0 5px;
+    font-size: 12px;
+    color: #969696;
+}
+
+.subscription .main .add-follow-list .info i {
+    margin-right: 2px;
+    font-size: 13px;
+    color: #999;
+}
+/*阅读更多*/
+.load-more {
+    width: 100%;
+    border-radius: 20px;
+    background-color: #42c02e;
+    /*height: 40px;*/
+    margin: 30px auto 60px;
+    padding: 10px 15px;
+    text-align: center;
+    font-size: 15px;
+    color: #fff;
+    display: block;
+}
+
+.hidden {
+    display: none;
+}

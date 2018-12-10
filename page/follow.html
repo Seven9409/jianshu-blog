@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>关注</title>
+
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_523036_2ipy00imk0yynwmi.css">
+    <link href="../static/css/follow.css" rel="stylesheet">
+</head>
+<body class="reader-black-font">
+
+<!--导航栏-->
+<div class="top">
+    <a class="logo" href="./index.html">
+        <img src="../static/img/简书.jpg" alt="简书logo"></a>
+
+
+    <div class="right">
+        <a class="write" href="#" target="_blank"><i class="iconfont icon-yumaobi"></i>
+            写文章
+        </a>
+
+        <div class="uers">
+
+            <a class="uerser" href="#">
+                <img src="../static/img/uerser.jpg">
+            </a>
+
+            <ul class="homeHide">
+                <li><i class="iconfont icon-accountfilling"></i>我的主页</li>
+                <li><i class="iconfont icon-shuqian"></i>收藏的文章</li>
+                <li><i class="iconfont icon-qianbao1"></i>我的钱包</li>
+                <li><i class="iconfont icon-shezhi"></i>设置</li>
+                <li><i class="iconfont icon-fankui"></i>帮助与反馈</li>
+                <li><i class="iconfont icon-tuichu"></i>退出</li>
+            </ul>
+        </div>
+        <div class="Font">
+
+            <a class="fontPic">
+                <i class="iconfont icon-ziti"></i>
+            </a>
+
+            <div class="fontHide">
+                <div class="night-shift">
+                    <i class="iconfont icon-yejian"></i>
+                    <span> 夜间模式</span>
+                </div>
+                <div class="switch day-night-group">
+                    <a class="switch-btn switch-on">开</a>
+                    <a class="switch-btn switch-off active">关</a>
+                </div>
+                <hr>
+                <div class="switch font-family-group">
+                    <a class="switch-btn font-song active ">宋体</a>
+                    <a class="switch-btn font-hei">黑体</a>
+
+                </div>
+                <div class="switch">
+                    <a class="switch-btn  active">简</a>
+                    <a class="switch-btn">繁</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="middle">
+        <a class="mid find" href="#">发现</a>
+        <a class="mid attention" href="./follow.html">关注</a>
+        <a class="mid news" href="#">消息</a>
+
+        <span class="search">
+            <input type="text" placeholder="搜索">
+            <i class="iconfont icon-sousuo"></i>
+        </span>
+    </div>
+</div>
+
+<!--主体-->
+<div class="container subscription">
+    <div class="row">
+        <div class="aside">
+            <a class="change-type">全部关注</a>
+            <ul class="js-subscription-list">
+                <li class="router-link-exact-active active">
+                    <a href="#" class="wrap">
+                        <div class="avatar">
+                            <img src="../static/img/addfollow-fc392ec918dda9d19818181ca42d2d7e.png">
+                        </div>
+                        <div class="name">添加关注</div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!--全部推荐-->
+        <div class="col-xs-16 col-xs-offset-8 main">
+            <div class="tab-menu">
+                <ul class="trigger-menu">
+                    <li class="active">
+                        <a>全部推荐</a>
+                    </li>
+                    <li class>
+                        <a>
+                            <i class="iconfont icon-accountfilling"></i>推荐作者
+                        </a>
+                    </li>
+                    <li class>
+                        <a>
+                            <i class="iconfont icon-tuijianmoban"></i>推荐专题
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="tab-list">
+                <ul class="add-follow-list" id="recommend-list"></ul>
+                <ul class="add-follow-list " id="author-list"></ul>
+                <ul class="add-follow-list" id="topic-list"></ul>
+            </div>
+            <a target="_blank" class="load-more" style="display: block" id="read-more">阅读更多</a>
+
+        </div>
+    </div>
+</div>
+
+<script src="../static/js/common/jquery-3.2.1.min.js"></script>
+<!-- 包括所有bootstrap的js插件或者可以根据需要使用的js插件调用　-->
+<script src="../static/js/common/bootstrap.min.js"></script>
+<script src="../static/js/common/mock.js"></script>
+
+<script src="../static/js/common/friendly-time-format.js"></script>
+<script src="../static/js/mock-data.js"></script>
+<script src="../static/js/follow.js"></script>
+
+</body>
+</html>
