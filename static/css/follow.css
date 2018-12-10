@@ -63,7 +63,7 @@ li {
     float: right;
 }
 
-.right .uers a {
+.right .uers>a {
     position: relative;
     width: 40px;
     height: 40px;
@@ -97,7 +97,8 @@ li {
     line-height: 50px;
     display: none;
 }
-
+/*.homeHide li.hand:hover{cursor:hand}*/
+/*.homeHide>li{cursor:pointer}*/
 .homeHide i {
     color: red;
     font-size: 17px;

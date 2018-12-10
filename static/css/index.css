@@ -65,7 +65,7 @@ li {
     float: right;
 }
 
-.right .uers a {
+.right .uers>a {
     position: relative;
     width: 40px;
     height: 40px;
